@@ -4,28 +4,28 @@ using MintBillApi.Models;
 
 namespace MintBillApi.Services
 {
-    public class BillService
+    public class PaidBillService
     {
 
-        public List<Bill> _billItems;
+        public List<PaidBill> _billItems;
 
-        public BillService()
+        public PaidBillService()
         {
-            _billItems = new List<Bill>();
+            _billItems = new List<PaidBill>();
         }
 
-        public List<Bill> GetBills()
+        public List<PaidBill> GetPaidBills()
         {
             return _billItems;
         }
 
-        public Bill AddBill(Bill billItem)
+        public PaidBill AddPaidBill(PaidBill billItem)
         {
             _billItems.Add(billItem);
             return billItem;
         }
 
-        public Bill UpdateBill(string id, Bill billItem)
+        public PaidBill UpdatePaidBill(string id, PaidBill billItem)
         {
             for (var index = _billItems.Count - 1; index >= 0; index--)
             {
@@ -37,7 +37,7 @@ namespace MintBillApi.Services
             return billItem;
         }
 
-        public string DeleteBill(string id)
+        public string DeletePaidBill(string id)
         {
             for (var index = _billItems.Count - 1; index >= 0; index--)
             {

@@ -2,7 +2,7 @@ using System;
 
 namespace MintBillApi.Models
 {
-    public class Bill
+    public class PaidBill
     {
         public string ID { get; set; }
         public string title { get; set; }
