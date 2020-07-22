@@ -29,7 +29,7 @@ namespace MintBillApi.Controllers
         }
 
         [HttpPost("/api/paidbills")]
-        public ActionResult<PaidBill> AddBill(PaidBill bill)
+        public ActionResult<PaidBill> AddPaidBill(PaidBill bill)
         {
             _service.AddPaidBill(bill);
             return bill;

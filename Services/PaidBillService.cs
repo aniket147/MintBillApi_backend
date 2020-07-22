@@ -46,26 +46,7 @@ namespace MintBillApi.Services
                     _billItems.RemoveAt(index);
                 }
             }
-
             return id;
         }
-
-
     }
 }
-
-
-// using System;
-// using System.Collections.Generic;
-// using MintBillApi.Models;
-
-// namespace MintBillApi.Services
-// {
-//     public class IBillService
-//     {
-//         public List<Bill> GetBills(); 
-//         public Bill AddBill(Bill billItem);
-//         public Bill UpdateBill(string id, Bill billItem);
-//         public string DeleteBill(string id);
-//     }
-// }

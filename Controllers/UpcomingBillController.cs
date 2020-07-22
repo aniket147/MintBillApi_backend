@@ -29,7 +29,7 @@ namespace MintBillApi.Controllers
         }
 
         [HttpPost("/api/upcomingbills")]
-        public ActionResult<UpcomingBill> AddBill(UpcomingBill bill)
+        public ActionResult<UpcomingBill> AddUpcomingBill(UpcomingBill bill)
         {
             _service.AddUpcomingBill(bill);
             return bill;

@@ -46,10 +46,7 @@ namespace MintBillApi.Services
                     _billItems.RemoveAt(index);
                 }
             }
-
             return id;
         }
-
-
     }
 }
